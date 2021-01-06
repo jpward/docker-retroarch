@@ -6,7 +6,6 @@ Test out of running retroarch in docker
 
 ```bash
 ./docker/make_container.sh
-./docker/run.sh
 ```
 
 ## Running
