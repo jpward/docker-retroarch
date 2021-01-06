@@ -8,7 +8,7 @@ HERE="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
 #--cmd                  Command to run after user is setup
 
 #Variables for using GUI from docker, including X11 forwarding (TODO: there are more secure ways of doing this)
-GUI_ENV="-p 22222:22222"
+GUI_ENV=""
 if [ -n "${DISPLAY}" ]; then
   xhost +local:root
   XAUTH=/tmp/.docker.xauth.$RANDOM
